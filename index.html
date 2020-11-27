@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/page.css" type="text/css" />
+    <script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+</head>
+<body>
+<div class='contenedor'>
+    <section>
+        <div class='info1'>
+            <form name='formulario'>
+                <label>Nombre y apellidos</label>
+                <input type='text' id='nombre'><br><br>
+                <label>Dirección</label>
+                <input type='text' id='direccion'><br><br>
+                <label>Cantidad</label>
+                <input type='number' id='cantidad' value='1' min='1'><br><br>
+                <label>Seleccione talla:</label>
+                XS<input class="size" type='radio' name='talla' checked value='XS'>
+                S<input class="size" type='radio' name='talla' value='S'>
+                M<input class="size" type='radio' name='talla' value='M'>
+                L<input class="size" type='radio' name='talla' value='L'>
+                XL<input class="size" type='radio' name='talla' value='XL'><br><br> 
+                <label>Seleccione color:</label>
+                <select id='color'>
+                    <option>blanca</option>
+                    <option>amarilla</option>
+                    <option>naranja</option>
+                    <option>roja</option>
+                    <option>verde</option>
+                    <option>azul</option>
+                    <option>negra</option>
+                </select><br><br> 
+                <input type='button' id='enviar' value='Enviar'><br><br>
+                <div id='resumen'></div>
+            </form>
+        </div>
+        <div class='info2'>   
+            <img id='camiseta' src='img/camiseta_blanca.png'>
+        </div>
+    </section>
+    <section>
+        <form>
+        	<label>Artículo</label>
+        	<input type='text' id='articulo' required>
+        	<label>Precio</label>
+        	<input type='number' id='precio' required min='0'>
+        	<input type='button' id='alta' value='Alta artículo'>
+        </form><br><br>
+        <div>
+        	<table id='lista'></table>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
